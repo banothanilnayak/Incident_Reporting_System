@@ -20,6 +20,7 @@ session_start();
             <div class="d-flex justify-content-center gap-3 mt-4">
                 <a href="../incidents/manage_incidents.php" class="btn btn-outline-primary">Manage Incidents</a>
                 <a href="../auth/logout.php" class="btn btn-outline-danger">Logout</a>
+                <a href="../assets/js/charts.php" class="btn btn-outline-primary">Dashboard widgets</a>
             </div>
         </div>
     </div>
