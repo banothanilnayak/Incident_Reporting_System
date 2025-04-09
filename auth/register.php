@@ -4,7 +4,7 @@ include '../config/db.php';
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $name = $_POST['name'];
     $email = $_POST['email'];
-    $password = password_hash($_POST['password'], PASSWORD_DEFAULT);
+    $password = $_POST['password'];
 
     $role = 'User'; // Default role
     $status = 'Active';
@@ -12,5 +12,5 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     mysqli_query($conn, "INSERT INTO users (name, email, password, role, status) 
         VALUES ('$name', '$email', '$password', '$role', '$status')");
 
-    echo "Registered successfully!";
+    Header('Location: ../login.php');
 }
