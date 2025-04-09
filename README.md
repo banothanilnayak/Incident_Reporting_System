@@ -20,6 +20,7 @@ A simple, secure, and scalable Incident Reporting System built using PHP, MySQL,
 - Audit trail and logs (admin activity)
 - Super Admin panel for user management
 
+
 ## 🧰 Technologies Used
 
 - PHP (MySQLi)
